@@ -16,6 +16,6 @@ public class IkonController {
 
     @GetMapping("/getData/{size}/{page}")
     public Object responseIkon(@PathVariable("size") Integer size, @PathVariable ("page") Integer page){
-        return ikonService.GetDataIkonService();
+        return ikonService.GetDataIkonService(size, page);
     }
 }
